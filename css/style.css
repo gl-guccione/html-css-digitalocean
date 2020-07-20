@@ -63,9 +63,14 @@ a:hover {
   color: #5c6a88;
 }
 
+.bracket:hover {
+  color: #217dff;
+}
 .bracket::after {
   content: " >";
   display: inline;
+  position: relative;
+  top: 1px;
 }
 /*
 CONTENT
@@ -130,12 +135,13 @@ CONTENT
 }
 
 #hero form {
-  border-radius: 5px;
   padding: 40px 15px 20px;
+
+  border-radius: 5px;
 }
 #hero form button {
-  margin-bottom: 10px;
   width: 100%;
+  margin-bottom: 10px;
 }
 #hero form h2 {
   margin-bottom: 10px;
@@ -178,9 +184,9 @@ CONTENT
   font-size: 13px;
 }
 #customers img {
-  padding: 0 25px;
   width: 100%;
   max-width: calc((100% /2) - 30px);
+  padding: 0 25px;
 }
 
 @media (min-width: 768px) {
@@ -188,9 +194,9 @@ CONTENT
     font-size: 16px;
   }
   #customers img {
-    padding: 0 10px;
     width: 100%;
     max-width: calc((100% /6) - 15px);
+    padding: 0 10px;
   }
 }
 

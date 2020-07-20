@@ -86,7 +86,9 @@ ELEMENTS
   max-width: 600px;
   margin: auto;
 }
-.carousel img {
+.carousel .box {
+  display: inline-block;
+  background-color: #fff;
   width: calc(100% - 80px);
 }
 .carousel span {
@@ -101,7 +103,7 @@ ELEMENTS
 
 .selector > div {
   display: inline-block;
-  margin: 0 2px;
+  margin: 0 1px;
   width: 10px;
   height: 10px;
   border: 2px solid #217dff;
@@ -271,4 +273,55 @@ CONTENT
 /* infrastructure */
 #infrastructure h2 + p {
   padding: 15px 0 40px;
+}
+
+/* business-features */
+#business-features h2 {
+  padding-bottom: 30px;
+}
+
+#business-features img {
+  height: 40px;
+}
+#business-features .row > div {
+  padding-bottom: 30px;
+}
+
+/* server */
+#server h2 {
+  padding-bottom: 20px;
+}
+
+#server .table > .row + .row {
+  border-top: 1px solid #fff;
+}
+#server .table > .row {
+  font-size: 10px;
+  line-height: 35px;
+  font-weight: 300;
+}
+#server .table a {
+  color: #04a5af;
+}
+
+@media (min-width: 768px) {
+  #server .table > .row {
+    font-size: 15px;
+  }
+}
+
+/* reviews */
+#reviews .box {
+  vertical-align: middle;
+  padding: 40px 5px;
+  margin-bottom: 15px;
+}
+#reviews .box p {
+  color: #5c6a88;
+  padding: 15px 0;
+}
+#reviews .box h6 {
+  font-weight: 400;
+  margin: -5px 0 25px;
+
 }

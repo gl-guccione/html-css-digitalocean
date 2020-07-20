@@ -1,5 +1,7 @@
 /* debug */
-
+.debug #hero {
+  background-color: blue;
+}
 /*
 GENERAL
 */
@@ -9,7 +11,9 @@ GENERAL
 /*
 TYPO
 */
-
+.text-white {
+  color: #fff;
+}
 
 
 /*
@@ -17,3 +21,11 @@ CONTENT
 */
 
 /* header-top */
+#header-top + * {
+  margin-top: 50px;
+}
+
+/* hero */
+#hero {
+  padding: 90px 0;
+}

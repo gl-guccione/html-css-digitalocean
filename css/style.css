@@ -70,6 +70,19 @@ a:hover {
 /*
 ELEMENTS
 */
+.btn_white {
+  padding: 8px 12px;
+
+  color: #217dff;
+  border: 1px solid #217dff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.btn_white:hover {
+  color: #fff;
+  background-color: #217dff;
+}
+
 .bracket:hover {
   color: #217dff;
 }
@@ -134,23 +147,11 @@ CONTENT
   max-width: 100%;
   max-height: 25px;
 }
-#header-top a {
+#header-top a:not(.btn_white) {
   color: #031c4e;
 }
-#header-top a:hover {
+#header-top a:hover:not(.btn_white) {
   color: #217dff;
-}
-#header-top .btn_signup {
-  padding: 8px 12px;
-
-  color: #217dff;
-  border: 1px solid #217dff;
-  border-radius: 5px;
-  background-color: #fff;
-}
-#header-top .btn_signup:hover {
-  color: #fff;
-  background-color: #217dff;
 }
 
 #header-top + * {
@@ -323,5 +324,9 @@ CONTENT
 #reviews .box h6 {
   font-weight: 400;
   margin: -5px 0 25px;
+}
 
+/* get-started */
+#get-started h2 {
+  margin-bottom: 30px;
 }

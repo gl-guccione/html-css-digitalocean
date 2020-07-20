@@ -27,6 +27,15 @@ h3 {
 .text_white {
   color: #fff;
 }
+.text_lightgray {
+  color: #bbcdff;
+}
+.text_defblue {
+  color: #031c4e;
+}
+.text_defgray {
+  color: #5c6a88;
+}
 
 
 /*
@@ -44,3 +53,5 @@ CONTENT
 }
 
 /* customers */
+
+/* scale-features */

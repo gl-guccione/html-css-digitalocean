@@ -58,6 +58,8 @@ CONTENT
 
 /* hero */
 #hero {
+  background-image: url(../img/bg_home.jpg);
+  background-size: cover;
   padding: 90px 0;
 }
 

@@ -12,6 +12,10 @@ section {
 .bg_gray {
   background-color: #f3f5f9;
 }
+.bg_darkblue {
+  background-color: #031c4e;
+}
+
 .bg_grandient_blue {
   background: linear-gradient(180deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
 }

@@ -9,11 +9,17 @@ section {
   padding-bottom: 50px;
 }
 
+.bg_white {
+  background-color: #fff;
+}
 .bg_gray {
   background-color: #f3f5f9;
 }
 .bg_darkblue {
   background-color: #031c4e;
+}
+.bg_lightblue {
+  background-color: #217dff;
 }
 
 .bg_grandient_blue {
@@ -40,6 +46,9 @@ a:hover {
 .text_white {
   color: #fff;
 }
+.text_lightblue {
+  color: #217dff;
+}
 .text_lightgray {
   color: #bbcdff;
 }
@@ -56,11 +65,14 @@ CONTENT
 
 /* header-top */
 #header-top {
-  background-color: #fff;
-  line-height: 70px;
-  height: 70px;
   overflow: hidden;
+
+  height: 70px;
+
+  background-color: #fff;
+
   font-size: 16px;
+  line-height: 70px;
 }
 
 #header-top img {
@@ -74,11 +86,12 @@ CONTENT
   color: #217dff;
 }
 #header-top .btn_signup {
+  padding: 8px 12px;
+
   color: #217dff;
-  background-color: #fff;
   border: 1px solid #217dff;
   border-radius: 5px;
-  padding: 8px 12px;
+  background-color: #fff;
 }
 #header-top .btn_signup:hover {
   color: #fff;
@@ -91,9 +104,65 @@ CONTENT
 
 /* hero */
 #hero {
-  padding: 90px 0;
+  padding: 70px 0;
+
   background-image: url(../img/bg_home.jpg);
+  background-position: center;
   background-size: cover;
+}
+#hero h1 {
+  font-size: 36px;
+}
+
+#hero p {
+  padding-top: 10px;
+
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#hero form {
+  border-radius: 5px;
+  padding: 40px 15px 20px;
+}
+#hero form button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+#hero form h2 {
+  margin-bottom: 10px;
+}
+#hero form button {
+  border: none;
+}
+#hero form button:nth-child(6) {
+  box-shadow: 1px 1px 3px #dedede;
+}
+#hero form button:nth-child(5):hover {
+  color: #fff;
+  background-color: #217dff;
+}
+#hero form button:nth-child(6):hover {
+  color: #000;
+  background-color: #fff;
+}
+#hero form p {
+  font-size: 12px;
+}
+#hero form p a {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 992px) {
+  #hero h1 {
+    font-size: 50px;
+  }
+
+  #hero p {
+    font-size: 20px;
+    line-height: 33px;
+  }
 }
 
 /* customers */

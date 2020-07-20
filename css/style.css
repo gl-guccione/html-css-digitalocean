@@ -1,6 +1,6 @@
 /* debug */
-.debug #hero {
-}
+
+
 /*
 GENERAL
 */
@@ -20,14 +20,21 @@ section {
   background: linear-gradient(180deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
 }
 
-
 /*
 TYPO
 */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1,
 h2,
 h3 {
   margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .text_white {
@@ -43,7 +50,6 @@ h3 {
   color: #5c6a88;
 }
 
-
 /*
 CONTENT
 */
@@ -51,16 +57,43 @@ CONTENT
 /* header-top */
 #header-top {
   background-color: #fff;
+  line-height: 70px;
+  height: 70px;
+  overflow: hidden;
+  font-size: 16px;
 }
+
+#header-top img {
+  max-width: 100%;
+  max-height: 25px;
+}
+#header-top a {
+  color: #031c4e;
+}
+#header-top a:hover {
+  color: #217dff;
+}
+#header-top .btn_signup {
+  color: #217dff;
+  background-color: #fff;
+  border: 1px solid #217dff;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+#header-top .btn_signup:hover {
+  color: #fff;
+  background-color: #217dff;
+}
+
 #header-top + * {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* hero */
 #hero {
+  padding: 90px 0;
   background-image: url(../img/bg_home.jpg);
   background-size: cover;
-  padding: 90px 0;
 }
 
 /* customers */

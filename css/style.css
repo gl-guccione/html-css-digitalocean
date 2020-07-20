@@ -43,6 +43,9 @@ CONTENT
 */
 
 /* header-top */
+#header-top {
+  background-color: #fff;
+}
 #header-top + * {
   margin-top: 50px;
 }

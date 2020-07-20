@@ -26,6 +26,10 @@ section {
   background: linear-gradient(180deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
 }
 
+.d_block {
+  display: block;
+}
+
 /*
 TYPO
 */
@@ -59,6 +63,10 @@ a:hover {
   color: #5c6a88;
 }
 
+.bracket::after {
+  content: " >";
+  display: inline;
+}
 /*
 CONTENT
 */
@@ -153,7 +161,6 @@ CONTENT
   text-decoration: underline;
 }
 
-
 @media (min-width: 992px) {
   #hero h1 {
     font-size: 50px;
@@ -166,5 +173,25 @@ CONTENT
 }
 
 /* customers */
+
+#customers h3 {
+  font-size: 13px;
+}
+#customers img {
+  padding: 0 25px;
+  width: 100%;
+  max-width: calc((100% /2) - 30px);
+}
+
+@media (min-width: 768px) {
+  #customers h3 {
+    font-size: 16px;
+  }
+  #customers img {
+    padding: 0 10px;
+    width: 100%;
+    max-width: calc((100% /6) - 15px);
+  }
+}
 
 /* scale-features */

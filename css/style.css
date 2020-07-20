@@ -261,7 +261,7 @@ CONTENT
 }
 
 #scale-features .scale_features_item {
-  height: 180px;
+  margin-top: 25px;
 }
 #scale-features .scale_features_item img {
   height: 40px;
@@ -269,6 +269,12 @@ CONTENT
 #scale-features .scale_features_item h4 + p {
   font-size: 16px;
   width: 90%;
+}
+
+@media (min-width: 768px) {
+  #scale-features .scale_features_item {
+    height: 200px;
+  }
 }
 
 /* infrastructure */
@@ -312,10 +318,16 @@ CONTENT
 }
 
 /* reviews */
+#reviews h2 {
+  margin-bottom: 15px;
+}
 #reviews .box {
   vertical-align: middle;
   padding: 40px 5px;
   margin-bottom: 15px;
+}
+#reviews .box img {
+  max-width: 98%;
 }
 #reviews .box p {
   color: #5c6a88;

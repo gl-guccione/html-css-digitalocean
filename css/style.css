@@ -5,13 +5,26 @@
 /*
 GENERAL
 */
+section {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
 
+.bg_color_gray {
+  background-color: #f3f5f9;
+}
 
 
 /*
 TYPO
 */
-.text-white {
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.text_white {
   color: #fff;
 }
 
@@ -29,3 +42,5 @@ CONTENT
 #hero {
   padding: 90px 0;
 }
+
+/* customers */

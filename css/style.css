@@ -207,6 +207,7 @@ CONTENT
 }
 #hero form button:nth-child(6) {
   box-shadow: 1px 1px 3px #dedede;
+  position: relative;
 }
 #hero form button:nth-child(5):hover {
   color: #fff;
@@ -221,6 +222,11 @@ CONTENT
 }
 #hero form p a {
   text-decoration: underline;
+}
+#hero form img {
+  position: absolute;
+  left: 7px;
+  height: 20px;
 }
 
 @media (min-width: 992px) {

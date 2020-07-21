@@ -62,8 +62,11 @@ a:hover {
 .text_defgray {
   color: #5c6a88;
 }
+.text_gray {
+  color: #8b94a9;
+}
 
-.ls-none {
+.ls_none {
   list-style: none;
 }
 
@@ -358,4 +361,32 @@ CONTENT
 /* get-started */
 #get-started h2 {
   margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+footer .paragraph {
+  margin: 10px 0;
+}
+footer .paragraph p {
+  margin: 0;
+}
+
+footer a {
+  color: #7a859d;
+}
+footer a:hover {
+  color: #fff;
+}
+
+footer .menus_footer {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+footer .menus_footer li {
+  line-height: 24px;
 }

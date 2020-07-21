@@ -101,6 +101,7 @@ ELEMENTS
 
 .carousel {
   width: 80%;
+  min-width: 300px;
   max-width: 600px;
   margin: auto;
 }
@@ -206,8 +207,9 @@ CONTENT
   border: none;
 }
 #hero form button:nth-child(6) {
-  box-shadow: 1px 1px 3px #dedede;
   position: relative;
+
+  box-shadow: 1px 1px 3px #dedede;
 }
 #hero form button:nth-child(5):hover {
   color: #fff;
@@ -226,6 +228,7 @@ CONTENT
 #hero form img {
   position: absolute;
   left: 7px;
+
   height: 20px;
 }
 

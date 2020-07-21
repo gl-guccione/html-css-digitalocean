@@ -30,6 +30,14 @@ section {
   display: block;
 }
 
+.no-gutter {
+  margin-right: -2px;
+  margin-left: -2px;
+}
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
 /*
 TYPO
 */
@@ -329,7 +337,7 @@ CONTENT
   border-top: 1px solid #fff;
 }
 #server .table > .row {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 35px;
 }

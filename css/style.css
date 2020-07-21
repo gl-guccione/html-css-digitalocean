@@ -408,7 +408,7 @@ CONTENT
   padding: 10px;
 
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #f4f0f0;
 }
 #baloon-shark::before {
   position: absolute;
@@ -424,7 +424,7 @@ CONTENT
   transform: rotate(45deg);
 
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #f4f0f0;
 }
 
 

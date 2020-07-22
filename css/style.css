@@ -168,7 +168,7 @@ a:hover {
 #hamburger:checked ~ #menu-burger {
   height: 280px;
 
-  transition: all 1200ms ease-in-out;
+  transition: all 1s ease-in-out;
 
 }
 

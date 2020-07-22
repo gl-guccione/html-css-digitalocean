@@ -29,6 +29,13 @@ section {
 .d_block {
   display: block;
 }
+.d_none {
+  display: none;
+}
+
+.p_relative {
+  position: relative;
+}
 
 .no-gutter {
   margin-right: -2px;
@@ -78,6 +85,95 @@ a:hover {
   list-style: none;
 }
 
+/* menu hamburger */
+
+.bars {
+  position: relative;
+  top: 12px;
+
+  cursor: pointer;
+}
+.bars > div {
+  position: relative;
+  top: 0;
+
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+
+  transition: all 700ms;
+  transform: rotate(0deg);
+
+  background-color: #0068ff;
+}
+
+#menu-burger {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+
+  overflow: hidden;
+
+  height: 0;
+
+  transition: all 2s;
+
+  background-color: #fff;
+  box-shadow: 2px 2px 5px -3px #217dff;
+}
+#menu-burger ul {
+  margin: 0;
+  padding: 5px 15px;
+}
+#menu-burger ul:last-child {
+  margin-bottom: 10px;
+}
+#menu-burger hr {
+  width: 50%;
+  margin: 3px auto;
+
+  border-color: #217dff;
+}
+#menu-burger li {
+  line-height: 40px;
+}
+#menu-burger li a {
+  display: block;
+
+  padding: 0 4px;
+}
+#menu-burger ul.ls_none li a:hover {
+  color: #fff;
+  border-radius: 10px;
+  background-color: #0049ff;
+}
+
+/* checked */
+#hamburger:checked + label > .bars > div:first-child {
+  top: 5px;
+
+  transition: all 700ms;
+  transform: rotate(-45deg);
+}
+#hamburger:checked + label > .bars > div:nth-child(2) {
+  background-color: transparent;
+}
+#hamburger:checked + label > .bars > div:last-child {
+  top: -7px;
+
+  transition: all 700ms;
+  transform: rotate(45deg);
+}
+
+#hamburger:checked ~ #menu-burger {
+  height: 280px;
+
+  transition: all 1200ms ease-in-out;
+
+}
+
+
+
 /*
 ELEMENTS
 */
@@ -93,6 +189,7 @@ ELEMENTS
   color: #fff;
   background-color: #217dff;
 }
+
 
 .bracket:hover {
   color: #217dff;
@@ -155,8 +252,6 @@ CONTENT
 
 /* header-top */
 #header-top {
-  overflow: hidden;
-
   height: 70px;
 
   background-color: #fff;

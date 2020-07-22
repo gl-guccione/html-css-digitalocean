@@ -116,7 +116,7 @@ a:hover {
 
   height: 0;
 
-  transition: all 2s;
+  transition: all 1s;
 
   background-color: #fff;
   box-shadow: 2px 2px 5px -3px #217dff;
@@ -152,7 +152,6 @@ a:hover {
 #hamburger:checked + label > .bars > div:first-child {
   top: 5px;
 
-  transition: all 700ms;
   transform: rotate(-45deg);
 }
 #hamburger:checked + label > .bars > div:nth-child(2) {
@@ -161,14 +160,11 @@ a:hover {
 #hamburger:checked + label > .bars > div:last-child {
   top: -7px;
 
-  transition: all 700ms;
   transform: rotate(45deg);
 }
 
 #hamburger:checked ~ #menu-burger {
   height: 280px;
-
-  transition: all 1s ease-in-out;
 }
 
 
